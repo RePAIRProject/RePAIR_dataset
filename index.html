@@ -25,7 +25,7 @@
 
 
   <title>Re-assembling the past: The RePAIR dataset and benchmark for real world 2D and 3D puzzle solving</title>
-  <link rel="icon" type="image/x-icon" href="static/images/aafr.ico">
+  <link rel="icon" type="image/x-icon" href="">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -43,6 +43,9 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <!-- Import the component -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
 </head>
 <body>
 
@@ -55,7 +58,7 @@
             <h1 class="title is-1 publication-title">Re-assembling the past: The RePAIR dataset and benchmark for real world 2D and 3D puzzle solving</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
+              <!-- <span class="author-block">
                 <a href="" target="_blank">author1</a><sup>*</sup>,
               </span>
               <span class="author-block">
@@ -63,17 +66,16 @@
               </span>
               <span class="author-block">
                 <a href="" target="_blank">author3</a>,
-              </span>
+              </span> -->
             </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">RePAIR Project</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
-                  <div class="column has-text-centered">
+                  <!-- <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
                       <span class="link-block">
                         <a href="" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -84,10 +86,6 @@
                       </a>
                     </span>
 
-                    
-                    
-
-                  <!-- Github link -->
                   <span class="link-block">
                     <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -98,7 +96,6 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
                 <span class="link-block">
                   <a href="" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
@@ -108,7 +105,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <br>
+              <br> -->
               
               <!-- <span class="link-block">
                 <a href="static/pdfs/Reassembling_3DVR_2023.pdf" target="_blank"
@@ -137,17 +134,105 @@
   </div>
 </section>
 
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3 ">Something will come</h2>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">The RePAIR Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            The paper is submitted and this page is a prototype. 
+            The preview shown here are just a few example of the fragments in our dataset.
+            Upon publication, the web page will be updated.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-four-fifths">A preview of the 3D fragments</h2>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-one-third">
+          <model-viewer
+            alt="Object"
+            src="static/3D_frags/rpf_00194.glb"
+            style="
+                width: 100%;
+                height: 250px;
+                background-color: #ffffff;
+            "
+            exposure=".8"
+            camera-orbit="90deg 90deg 105%"
+            auto-rotate
+            camera-controls
+          >
+          </model-viewer>
+        </div>
+        <div class="column is-one-third">
+          <model-viewer
+            alt="Object"
+            src="static/3D_frags/rpf_00274.glb"
+            style="
+                width: 100%;
+                height: 250px;
+                background-color: #ffffff;
+            "
+            exposure=".8"
+            camera-orbit="90deg 90deg 105%"
+            auto-rotate
+            camera-controls
+          >
+          </model-viewer>
+        </div>
+        <div class="column is-one-third">
+          <model-viewer
+            alt="Object"
+            src="static/3D_frags/rpf_00963.glb"
+            style="
+                width: 100%;
+                height: 250px;
+                background-color: #ffffff;
+            "
+            exposure=".8"
+            camera-orbit="90deg 90deg 105%"
+            auto-rotate
+            camera-controls
+          >
+          </model-viewer>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-four-fifths">A preview of the 2D fragments</h2>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-one-third">
+          <img src="static/2D_frags/RPf_00202.png"/>
+        </div>
+        <div class="column is-one-third">
+          <img src="static/2D_frags/RPf_00205.png"/>
+        </div>
+        <div class="column is-one-third">
+          <img src="static/2D_frags/RPf_00612.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Teaser video-->
 <!-- <section class="hero teaser">
@@ -191,7 +276,7 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
@@ -205,11 +290,18 @@
 }
       </code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
+
+    <h2 class="title">Preview Files</h2>
+    <p>
+      The files used in this web page are not yet released. 
+      These should not be used until full disclosure of the dataset.
+    </p>
+
     <h2 class="title">Acknowledgment</h2>
     <p>
       This work is part of a project that has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No.964854.
