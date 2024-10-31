@@ -56,10 +56,16 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Re-assembling the past: The RePAIR dataset and benchmark for real world 2D and 3D puzzle solving</h1>
-            <div class="is-size-5 publication-authors">
+            <div class="is-size-6 publication-authors">
+              Theodore Tsesmelis<sup>1,*</sup>, Luca Palmieri<sup>2,*</sup>, Marina Khoroshiltseva<sup>2</sup>, 
+              Adeela Islam<sup>1</sup>, Gur Elkin<sup>3</sup>, Ofir Itzhak Shahar<sup>3</sup>, Gianluca Scarpellini<sup>1</sup>, 
+              Stefano Fiorini<sup>1</sup>, Yaniv Ohayon<sup>3</sup>, Nadav Alali<sup>3</sup>, Sinem Aslan<sup>2,7</sup>, Pietro Morerio<sup>1</sup>, 
+              Sebastiano Vascon<sup>2</sup>, Elena Gravina<sup>4</sup>, Maria Cristina Napolitano<sup>4</sup>, Giuseppe Scarpati<sup>4</sup>, 
+              Gabriel Zuchtriegel<sup>4</sup>, Alexandra Spühler<sup>5</sup>, Michel E. Fuchs<sup>5</sup>, Stuart James<sup>1,6</sup>, 
+              Ohad Ben-Shahar<sup>3</sup>, Marcello Pelillo<sup>2</sup>, Alessio Del Bue<sup>1</sup>
               <!-- Paper authors -->
               <!-- <span class="author-block">
-                <a href="" target="_blank">author1</a><sup>*</sup>,
+                <a href="" target="_blank">author1</a>,
               </span>
               <span class="author-block">
                 <a href="" target="_blank">author2</a><sup>*</sup>,
@@ -67,11 +73,20 @@
               <span class="author-block">
                 <a href="" target="_blank">author3</a>,
               </span> -->
+              <span class="eql-cntrb is-size-7"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+
             </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">RePAIR Project</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  <div class="is-size-6 publication-authors mt-4">
+                    <span class="author-block"><sup>1</sup>Fondazione Istituto Italiano di Tecnologia</span>
+                    <span class="author-block"><sup>2</sup>Ca' Foscari University of Venice</span>
+                    <span class="author-block"><sup>3</sup>Ben-Gurion University of the Negev</span>
+                    <span class="author-block"><sup>4</sup>Parco Archeologico di Pompei</span>
+                    <span class="author-block"><sup>5</sup>University of Lausanne</span>
+                    <span class="author-block"><sup>6</sup>Durham University</span>
+                    <span class="author-block"><sup>7</sup>University of Milan</span>
+                    <br>
+                    <i>will be presented at</i> &nbsp; <span class="author-block has-text-weight-semibold pt-2">NeurIPS 2024 Track Datasets and Benchmarks</span>
                   </div>
 
                   <!-- <div class="column has-text-centered">
@@ -138,14 +153,114 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">The RePAIR Dataset</h2>
+        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The paper is submitted and this page is a prototype. 
-            The preview shown here are just a few example of the fragments in our dataset.
-            Upon publication, the web page will be updated.
+            This paper proposes the RePAIR dataset that represents a challenging benchmark to test modern computational and data driven methods for puzzle-solving and reassembly tasks. 
+            Our dataset has unique properties that are uncommon to current benchmarks for 2D and 3D puzzle solving. 
+            The fragments and fractures are realistic, caused by a collapse of a fresco during a World War II bombing at the Pompeii archaeological park. 
+            The fragments are also eroded and have missing pieces with irregular shapes and different dimensions, challenging further the reassembly algorithms. 
+            The dataset is multi-modal providing hi-res images with characteristic pictorial elements, detailed 3D scans of the fragments and meta-data annotated by the archaeologists. 
+            Ground truth has been generated through several years of unceasing fieldwork, including the excavation and cleaning of each fragment, followed by manual puzzle solving by archaeologists of a subset of 1,000 pieces among the 16,000 available. 
+            After digitizing all the fragments in 3D, a benchmark was prepared to challenge current reassembly and puzzle-solving methods that often solve more simplistic synthetic scenarios. 
+            The tested baselines show that there clearly exists a gap to fill in solving this computationally complex problem.
           </p>
         </div>
+        <h2 class="title is-3">Resources</h2>
+        <div class="has-text-centered">
+          <h3 class="title is-4 my-3">Paper</h3>
+          <span class="link-block">
+            <a href="" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="ai ai-arxiv"></i>
+              </span>
+              <span>Paper (coming soon)</span>
+            </a>
+          </span>
+        </div>
+        <div class="has-text-centered">
+          <h3 class="title is-4 my-3">Dataset</h3>
+          
+          <span class="link-block">
+            <a href="" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>2D Dataset on Zenodo</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>3D Dataset on Zenodo</span>
+            </a>
+          </span>
+        </div>
+        <div class="mt-4 has-text-centered">
+          <h3 class="title is-4 my-3">Data Processing</h3>
+          <span class="link-block">
+            <a href="https://github.com/RePAIRProject/fragment_digitization" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Fragments Digitization</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://github.com/RePAIRProject/segment_3Dfragment" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>3D Segmentation</span>
+            </a>
+          </span>
+          <br>
+          <span class="link-block">
+            <a href="https://github.com/RePAIRProject/pcd2images" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>2D Rendering</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://github.com/RePAIRProject/repair_ground_truth" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Ground Truth Preparation</span>
+            </a>
+          </span>
+        </div>
+        <div class="mt-4 has-text-centered"></div>
+          <h3 class="title is-4 my-3">Puzzle Solving (Reassembly)</h3>
+          <span class="link-block">
+            <a href="https://github.com/RePAIRProject/2D-baselines" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>2D Baselines</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://github.com/RePAIRProject/3D-baselines" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>3D Baselines</span>
+            </a>
+          </span>
       </div>
     </div>
   </div>
@@ -155,7 +270,7 @@
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered has-text-centered">
-        <h2 class="title is-four-fifths">A preview of the 3D fragments</h2>
+        <h2 class="title is-four-fifths mt-4">A preview of the 3D fragments</h2>
       </div>
       <div class="columns is-centered has-text-centered">
         <div class="column is-one-third">
